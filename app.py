@@ -17,10 +17,19 @@ def weather(city):
     print(f"Hi {name}! here's the weather in {location}")
     print(info)
     print(weather+"°C")
+    if info == 'Rain':
+        print("Don't forget your umbrella!")
+    elif info == 'Light rain showers':
+        print("Don't forget your umbrella!")
+    elif info == 'Mostly cloudy':
+        print("Jacket will make you warm")
+    else:
+        print(f'Have a Nice Day {name}:)')
+
 
 print("Welcome to simple weather app!")
 name = input("Hi there! What is your name? ")
 city = input("Enter the Name of City -> ")
 city = city+" weather"
 weather(city)
-print('Have a Nice Day:)')
+
